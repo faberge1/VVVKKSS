@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/VKUSSS.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    
+    
+    
+    <script src="/script.js"></script>
+    <title>Домашняя пекарня "Вкус хлеба" </title>
+
+</head>
+<body onload="load()">
+    <header id="main_header_else">
+        <input type="checkbox" id="burger">
+
+        <label for="burger">
+            <svg width="30" height="30" fill="none" viewBox="0 0 24 24"
+            class="IconStyled__StyledIcon-sc-pzfg42-0 iBRIKg" style="margin-top: 6px; ">
+            <rect x="3" y="4" width="18" height="2" rx="1" fill="#fff"></rect>
+            <rect x="3" y="11" width="18" height="2" rx="1" fill="#fff"></rect>
+            <rect x="3" y="18" width="18" height="2" rx="1" fill="#fff"></rect>
+           </svg>
+        </label>
+                        <nav id = "menu">
+                            <ul id="header_menu">
+                                <a href="./index.html"><img class="logo"  id="logo" src="./img/LOGOMAIN.png" alt="Лого" style="width: 120px; margin-right: 80px;">
+                                <a class="first" href="index.html"><li>Главная</li></a> 
+                                <a class="first" href="Menu.html"><li>Меню</li></a>
+                                <a class="first" href="Korzina.html"><li>Корзина</li></a>
+                                <a class="first" href="index.html#reviews"><li>Отзывы</li></a>
+                                <a class="first" href="index.html#contacts"><li>Контакты</li></a> 
+                                <a class="first" href="tortypodzakaz.html"><li>Торты на заказ</li></a>
+                                 
+                            </ul>
+                        </nav>
+                        </header>
+                        <section>
+                            <div class="firstname"></div>
+                            <center> <h9>Пироги на заказ</h9></center>
+                            <div class="sectionesag"></div>
+                        </div>
+                        <div class="pirogi">
+                        <table>
+                            <tr><a href="#openModal14"><img src="./img/pirogi1.png"></a></tr>
+                            <tr><a href="#openModal15"><img src="./img/pirogi2.png"></a></tr>
+                        </div>
+                        </table>
+                        </section>
+                        <div id="openModal14" class="modalmain">
+                            <div class="modalmain-dialog">
+                              <div class="modalmain-content">
+                                <div class="modalmain-header">
+                                  <h3 class="modalmain-title"></h3>
+                                  <a href="#closemain" title="Close" class="closemain">×</a>
+                                </div>
+                                <div class="modalmain-body">
+                                    <img class="img_modal_pirogi" src="./img/pirogi1.png">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="openModal15" class="modalmain">
+                            <div class="modalmain-dialog">
+                              <div class="modalmain-content">
+                                <div class="modalmain-header">
+                                  <h3 class="modalmain-title"></h3>
+                                  <a href="#closemain" title="Close" class="closemain">×</a>
+                                </div>
+                                <div class="modalmain-body">
+                                    <img class="img_modal_pirogi" src="./img/pirogi2.png">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                              var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+                              console.log(scrollbar);
+                              document.querySelector('[href="#openModal1"]').addEventListener('click', function () {
+                                document.body.style.overflow = 'hidden';
+                                document.querySelector('#openModal1').style.marginLeft = scrollbar;
+                              });
+                              document.querySelector('[href="#closemain"]').addEventListener('click', function () {
+                                document.body.style.overflow = 'visible';
+                                document.querySelector('#openModal1').style.marginLeft = '0px';
+                              });
+                            });
+                          </script>
+                        </body>
+                        <footer>
+                            <div class="footer">
+                                <div class="logofooter">
+                                    <a href="#main_header">Домашняя пекарня "Вкус хлеба"</a>
+                                </div>
+                                <div class="footer-items">
+                                    <a href="./Menu.html"><li>Меню</li></a>  
+                                    <a href="./Korzina.html"><li>Корзина</li></a>
+                                    <a href="#contacts"><li>Контакты</li></a> 
+                                    <a href="#reviews"><li>Отзывы</li></a>
+                                    <a class="first" href="tortypodzakaz.html"><li>Торты на заказ</li></a> 
+                                    <a class="first" href="pirogipodzakaz.html"><li>Пироги на заказ</li></a>
+                                </div>
+                            </div>
+                        </footer> 
+                      
+                        
+                        </html>
